@@ -4,7 +4,8 @@ namespace Sandwicherie.db
 {
 	public class Db
 	{
-		public List<Sandwich> sandwichs = new List<Sandwich>();
+		public List<Sandwich> sandwichsMenu = new List<Sandwich>();
+		public List<Sandwich> sandwichsUtilisateur = new List<Sandwich>();
 
 
 	}

@@ -6,7 +6,7 @@ namespace Sandwicherie.service
 {
 	public class SandwichUtilisateurServices
 	{
-		public Db db;
+		private Db db;
 
         public SandwichUtilisateurServices(Db db)
         {

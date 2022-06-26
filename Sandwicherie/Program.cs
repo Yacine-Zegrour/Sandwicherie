@@ -1,12 +1,9 @@
-﻿Console.WriteLine(" Menu ");
-Console.WriteLine("   Jambon beurre");
-Console.WriteLine("   Poulet crudités ");
-Console.WriteLine("   Dieppois ");
-// creation des sandwich
+﻿using Sandwicherie.service;
+
+Sandwich
+ SandwichMenuServices menu = new SandwichMenuServices();
+ menu.addSandwich()
 
 
 
-
-//Console.WriteLine("Ecrivez le nom de votre sandwich");
-//string sandwich = Console.ReadLine();
 
