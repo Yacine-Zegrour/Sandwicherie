@@ -1,0 +1,15 @@
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/bin/Debug/net6.0/Sandwicherie
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/bin/Debug/net6.0/Sandwicherie.deps.json
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/bin/Debug/net6.0/Sandwicherie.runtimeconfig.json
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/bin/Debug/net6.0/Sandwicherie.dll
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/bin/Debug/net6.0/Sandwicherie.pdb
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/obj/Debug/net6.0/Sandwicherie.csproj.AssemblyReference.cache
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/obj/Debug/net6.0/Sandwicherie.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/obj/Debug/net6.0/Sandwicherie.AssemblyInfoInputs.cache
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/obj/Debug/net6.0/Sandwicherie.AssemblyInfo.cs
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/obj/Debug/net6.0/Sandwicherie.csproj.CoreCompileInputs.cache
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/obj/Debug/net6.0/Sandwicherie.dll
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/obj/Debug/net6.0/refint/Sandwicherie.dll
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/obj/Debug/net6.0/Sandwicherie.pdb
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/obj/Debug/net6.0/Sandwicherie.genruntimeconfig.cache
+/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/obj/Debug/net6.0/ref/Sandwicherie.dll
