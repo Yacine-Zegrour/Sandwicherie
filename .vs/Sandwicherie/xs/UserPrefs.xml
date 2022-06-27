@@ -1,4 +1,32 @@
 ﻿<Properties StartupConfiguration="{F99133BB-214F-4CE2-A3B7-C0BD08957AE3}|Default">
-  <MonoDevelop.Ide.ItemProperties.Sandwicherie FirstBuild="True" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Sandwicherie PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sandwicherie/Program.cs">
+    <Files>
+      <File FileName="Sandwicherie/Program.cs" Line="10" Column="1" />
+      <File FileName="Sandwicherie/model/sandwich.cs" Line="18" Column="1" />
+      <File FileName="Sandwicherie/service/SandwichUtilisateurServices.cs" Line="5" Column="31" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Sandwicherie" expanded="True" selected="True">
+            <Node name="Sandwicherie" expanded="True">
+              <Node name="db" expanded="True" />
+              <Node name="model" expanded="True" />
+              <Node name="service" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
 </Properties>
