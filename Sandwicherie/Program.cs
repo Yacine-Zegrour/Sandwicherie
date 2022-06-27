@@ -1,19 +1,40 @@
 ﻿using Sandwicherie.service;
+using Sandwicherie.model;
 
+
+SandwichMenuServices menu = new SandwichMenuServices();
+
+List<String> ingrediantsJambonBeurre = new List<string>();
+ingrediantsJambonBeurre.Add("1 pain");
+ingrediantsJambonBeurre.Add("1 tranche de jambon");
+ingrediantsJambonBeurre.Add("10g de beurre");
+Sandwich sandwichJambonBeurre = new Sandwich("jambon beurre", ingrediantsJambonBeurre, 3.50);
+
+
+List<String> ingrediantsPouletcrudités = new List<string>();
+ingrediantsPouletcrudités.Add("1 pain");
+ingrediantsPouletcrudités.Add("1 oeuf");
+ingrediantsPouletcrudités.Add("0.5 tomate");
+ingrediantsPouletcrudités.Add("1 tranche de poulet");
+ingrediantsPouletcrudités.Add("10g de mayonnaise");
+ingrediantsPouletcrudités.Add("10g de salade");
+Sandwich sandwichPouletcrudités = new Sandwich("Poulet crudités", ingrediantsPouletcrudités, 5);
+
+List<String> ingrediantsDieppois = new List<string>();
+ingrediantsDieppois.Add("1 pain");
+ingrediantsDieppois.Add("50g de thon");
+ingrediantsDieppois.Add("0.5 tomate");
+ingrediantsDieppois.Add("10g de mayonnaise");
+ingrediantsDieppois.Add("10g de salade");
+Sandwich sandwichDieppois = new Sandwich("Dieppois", ingrediantsDieppois, 4.50);
+menu.addSandwich(sandwichDieppois);
+menu.addSandwich(sandwichPouletcrudités);
+menu.addSandwich(sandwichJambonBeurre);
 
 string continu = "y";
 
-Console.WriteLine("################################################################################################################");
-Console.WriteLine("#############################################Affichage du menu##################################################");
-Console.WriteLine("################################################################################################################");
-Console.WriteLine("- Jambon beurre : 1 pain, 1 tranche de jambon, 10g de beurre => 3,50€");
-Console.WriteLine("- Poulet crudités : 1 pain, 1 oeuf, 0.5 tomate, 1 tranche de poulet, 10g de mayonnaise, 10g de salade => 5€");
-Console.WriteLine("- Dieppois : 1 pain, 50g de thon, 0.5 tomate, 10g de mayonnaise, 10g de salade => 4,50€");
-Console.WriteLine("");
-Console.WriteLine("################################################################################################################");
 
-Console.WriteLine("");
-Console.WriteLine("");
+menu.getMenu();
 
 string command = "";
 while ("n" != continu)
@@ -35,14 +56,34 @@ Console.WriteLine("#############################################################
 string[] words = command.Split(',');
 for (int i = 0; i<nb; i ++){
 
-    Console.WriteLine(words[i]);
+    if(words[i].ToLower()== "jambon beurre")
+    {
+        Console.WriteLine(words[i]);
+        Console.WriteLine("        1 pain");
+        Console.WriteLine("        1 tranche de jambon");
+        Console.WriteLine("        10g de beurre");
+    }
+    if (words[i].ToLower() == "poulet crudités")
+    {
+        Console.WriteLine(words[i]);
+        Console.WriteLine("        1 pain");
+        Console.WriteLine("        1 oeuf");
+        Console.WriteLine("        0.5 tomate");
+        Console.WriteLine("        1 tranche de poulet");
+        Console.WriteLine("        10g de mayonnaise");
+        Console.WriteLine("        10g de salade");
+    }
+    if(words[i].ToLower() == "dieppois")
+    {
+        Console.WriteLine(words[i]);
+        Console.WriteLine("        1 pain");
+        Console.WriteLine("        50g de thon");
+        Console.WriteLine("        0.5 tomate");
+        Console.WriteLine("        10g de mayonnaise");
+        Console.WriteLine("        10g de salade");
+    }
+    
 }
 
 
-/*
- * 
-Sandwich
- SandwichMenuServices menu = new SandwichMenuServices();
- menu.addSandwich()
-
- */
+ 
