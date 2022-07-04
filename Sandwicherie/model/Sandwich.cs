@@ -31,6 +31,8 @@ namespace Sandwicherie.model
         {
             return nom + " :" + ingrediants.ToString() + prix;
         }
+
+       
     }
 }
 

@@ -9,12 +9,10 @@
 
   <ItemGroup>
     <None Remove="model\" />
-    <None Remove="db\" />
     <None Remove="service\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="model\" />
-    <Folder Include="db\" />
     <Folder Include="service\" />
   </ItemGroup>
 </Project>

@@ -1,21 +1,22 @@
 ﻿<Properties StartupConfiguration="{F99133BB-214F-4CE2-A3B7-C0BD08957AE3}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Sandwicherie PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sandwicherie/Program.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sandwicherie/model/Panier.cs">
     <Files>
-      <File FileName="Sandwicherie/Program.cs" Line="10" Column="1" />
-      <File FileName="Sandwicherie/model/sandwich.cs" Line="18" Column="1" />
-      <File FileName="Sandwicherie/service/SandwichUtilisateurServices.cs" Line="5" Column="31" />
+      <File FileName="Sandwicherie/Program.cs" Line="63" Column="33" />
+      <File FileName="Sandwicherie/service/SandwichUtilisateurServices.cs" Line="15" Column="42" />
+      <File FileName="Sandwicherie/db/Db.cs" Line="8" Column="53" />
+      <File FileName="Sandwicherie/service/SandwichMenuServices.cs" Line="36" Column="6" />
+      <File FileName="Sandwicherie/model/Sandwich.cs" Line="23" Column="10" />
+      <File FileName="Sandwicherie/model/Panier.cs" Line="27" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Sandwicherie" expanded="True" selected="True">
+          <Node name="Sandwicherie" expanded="True">
             <Node name="Sandwicherie" expanded="True">
               <Node name="db" expanded="True" />
               <Node name="model" expanded="True" />
@@ -29,4 +30,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Sandwicherie PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

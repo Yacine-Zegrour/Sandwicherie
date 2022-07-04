@@ -1,8 +1,8 @@
-﻿using Sandwicherie.service;
-using Sandwicherie.model;
+﻿using Sandwicherie.model;
 
 
-SandwichMenuServices menu = new SandwichMenuServices();
+Catalogue menu = new Catalogue();
+Panier panier = new Panier();
 
 List<String> ingrediantsJambonBeurre = new List<string>();
 ingrediantsJambonBeurre.Add("1 pain");
@@ -41,49 +41,42 @@ while ("n" != continu)
 {
     Console.WriteLine("Quels sandwich souhaitez vous ?");
     string commandActual = Console.ReadLine();
-    command += commandActual+ ",";
-    Console.WriteLine("souhaitez vous en ajouter encore  ? y/n");
-    continu = Console.ReadLine();
+    string[] commandes = commandActual.Split(',');
+    for (int i = 0; i < commandes.Length; i++)
+    {
+
+        string quantity = commandes[i].Substring(0, 1);
+
+        string name = commandes[i].Substring(2);
+
+       Sandwich sandwich =  menu.GetSandwich(name);
+        if (sandwich!= null)
+        {
+            int quantityInt = int.Parse(quantity);
+            panier.addSandwich(quantityInt, sandwich);
+
+            panier.getSandwichs();
+        }
+       
+        }
+    
+
+       
+
+
+
+
+    
+
+
+
 }
-command = command.Substring(0,command.Length-1);
-int nb = command.Count(n => n == ',')+1;
-Console.WriteLine(command);
-Console.WriteLine("");
 
 Console.WriteLine("################################################################################################################");
 Console.WriteLine("#############################################Affichage du panier##################################################");
 Console.WriteLine("################################################################################################################");
-string[] words = command.Split(',');
-for (int i = 0; i<nb; i ++){
 
-    if(words[i].ToLower()== "jambon beurre")
-    {
-        Console.WriteLine(words[i]);
-        Console.WriteLine("        1 pain");
-        Console.WriteLine("        1 tranche de jambon");
-        Console.WriteLine("        10g de beurre");
-    }
-    if (words[i].ToLower() == "poulet crudités")
-    {
-        Console.WriteLine(words[i]);
-        Console.WriteLine("        1 pain");
-        Console.WriteLine("        1 oeuf");
-        Console.WriteLine("        0.5 tomate");
-        Console.WriteLine("        1 tranche de poulet");
-        Console.WriteLine("        10g de mayonnaise");
-        Console.WriteLine("        10g de salade");
-    }
-    if(words[i].ToLower() == "dieppois")
-    {
-        Console.WriteLine(words[i]);
-        Console.WriteLine("        1 pain");
-        Console.WriteLine("        50g de thon");
-        Console.WriteLine("        0.5 tomate");
-        Console.WriteLine("        10g de mayonnaise");
-        Console.WriteLine("        10g de salade");
-    }
-    
-}
+
 
 
  
