@@ -33,12 +33,10 @@ namespace Sandwicherie.model
             int price = 0;
             foreach (KeyValuePair<Sandwich, int> item in sandwichs)
             {
-                Console.WriteLine(item.Value+ "  "+ item.Key.nom + " - "+ (Convert.ToInt32(item.Key.prix)*item.Value) + " euros");
-                price = price + (Convert.ToInt32(item.Key.prix) * item.Value);
-                foreach (String element in item.Key.ingrediants)
-                {
-                    Console.WriteLine(" - " + element);
-                }
+                Console.WriteLine(item.Value+ "  "+ item.Key.Nom + " - "+ (Convert.ToInt32(item.Key.Prix)*item.Value) + " euros");
+                price = price + (Convert.ToInt32(item.Key.Prix) * item.Value);
+                Console.WriteLine();
+                Console.WriteLine(item.Key.ToString());
                 Console.WriteLine("-------------------------------------------------------");
 
               

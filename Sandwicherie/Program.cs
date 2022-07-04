@@ -4,32 +4,33 @@
 Catalogue menu = new Catalogue();
 Panier panier = new Panier();
 
-List<String> ingrediantsJambonBeurre = new List<string>();
-ingrediantsJambonBeurre.Add("1 pain");
-ingrediantsJambonBeurre.Add("1 tranche de jambon");
-ingrediantsJambonBeurre.Add("10g de beurre");
-Sandwich sandwichJambonBeurre = new Sandwich("jambon beurre", ingrediantsJambonBeurre, 3.50);
+SandwichBuilder sandwichBuilder = new SandwichBuilder();
+Sandwich jambonbeurre = sandwichBuilder
+    .WithPain(1)
+    .WithTrancheDeJambon(1)
+    .WithBeurre(10)
+    .Build("jambonbeurre",3.50);
 
+Sandwich pouletcrudités = sandwichBuilder
+    .WithPain(1)
+    .WithOeuf(1)
+    .WithTomate(0.5)
+    .WithTrancheDePoulet(1)
+    .WithMayonnaise(10)
+    .WithSalade(10)
+    .Build("Poulet crudités", 5);
 
-List<String> ingrediantsPouletcrudités = new List<string>();
-ingrediantsPouletcrudités.Add("1 pain");
-ingrediantsPouletcrudités.Add("1 oeuf");
-ingrediantsPouletcrudités.Add("0.5 tomate");
-ingrediantsPouletcrudités.Add("1 tranche de poulet");
-ingrediantsPouletcrudités.Add("10g de mayonnaise");
-ingrediantsPouletcrudités.Add("10g de salade");
-Sandwich sandwichPouletcrudités = new Sandwich("Poulet crudités", ingrediantsPouletcrudités, 5);
+Sandwich dieppois = sandwichBuilder
+    .WithPain(1)
+    .WithThon(50)
+    .WithTomate(0.5)
+    .WithMayonnaise(10)
+    .WithSalade(10)
+    .Build("Dieppois", 4.50);
 
-List<String> ingrediantsDieppois = new List<string>();
-ingrediantsDieppois.Add("1 pain");
-ingrediantsDieppois.Add("50g de thon");
-ingrediantsDieppois.Add("0.5 tomate");
-ingrediantsDieppois.Add("10g de mayonnaise");
-ingrediantsDieppois.Add("10g de salade");
-Sandwich sandwichDieppois = new Sandwich("Dieppois", ingrediantsDieppois, 4.50);
-menu.addSandwich(sandwichDieppois);
-menu.addSandwich(sandwichPouletcrudités);
-menu.addSandwich(sandwichJambonBeurre);
+menu.addSandwich(dieppois);
+menu.addSandwich(pouletcrudités);
+menu.addSandwich(jambonbeurre);
 
 string continu = "y";
 

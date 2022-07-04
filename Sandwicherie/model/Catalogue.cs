@@ -15,7 +15,7 @@ namespace Sandwicherie.model
 
         public Sandwich? GetSandwich(String name)
         {
-            return sandwichsMenu.FirstOrDefault(e => e.nom==name);
+            return sandwichsMenu.FirstOrDefault(e => e.Nom==name);
         }
 
         public void getMenu()
@@ -25,12 +25,11 @@ namespace Sandwicherie.model
             Console.WriteLine("################################################################################################################");
             foreach (Sandwich element in sandwichsMenu)
             {
-                Console.Write(element.nom + ": ");
+                Console.Write(element.Nom);
+                Console.WriteLine();
+                Console.Write(element.ToString());
 
-                foreach (string e in element.ingrediants)
-                {
-                    Console.Write(e + " ");
-                }
+              
 
                 Console.WriteLine();
             }
