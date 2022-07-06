@@ -27,9 +27,8 @@ namespace Sandwicherie.model
             {
                 Console.Write(element.Nom);
                 Console.WriteLine();
-                Console.Write(element.ToString());
 
-              
+                Console.Write(element.ToString());
 
                 Console.WriteLine();
             }
