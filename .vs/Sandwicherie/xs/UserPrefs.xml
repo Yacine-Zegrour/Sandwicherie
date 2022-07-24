@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{F99133BB-214F-4CE2-A3B7-C0BD08957AE3}|Default">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sandwicherie/model/Catalogue.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sandwicherie/Program.cs">
     <Files>
-      <File FileName="Sandwicherie/model/Sandwich.cs" Line="41" Column="62" />
-      <File FileName="Sandwicherie/model/Panier.cs" Line="38" Column="37" />
-      <File FileName="Sandwicherie/model/Catalogue.cs" Line="40" Column="1" />
-      <File FileName="Sandwicherie/model/SandwichBuilder.cs" Line="69" Column="9" />
-      <File FileName="Sandwicherie/Program.cs" Line="38" Column="9" />
-      <File FileName="Sandwicherie/model/StringBuilderExtensions.cs" Line="26" Column="2" />
+      <File FileName="Sandwicherie/model/Sandwich.cs" Line="33" Column="10" />
+      <File FileName="Sandwicherie/model/Panier.cs" Line="26" Column="11" />
+      <File FileName="Sandwicherie/model/Catalogue.cs" Line="34" Column="14" />
+      <File FileName="Sandwicherie/model/SandwichBuilder.cs" Line="22" Column="10" />
+      <File FileName="Sandwicherie/Program.cs" Line="75" Column="24" />
+      <File FileName="Sandwicherie/model/StringBuilderExtensions.cs" Line="15" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,6 +28,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Sandwicherie PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
