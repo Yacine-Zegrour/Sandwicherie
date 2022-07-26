@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Runtime.Serialization;
+using Sandwicherie.utils;
 
 namespace Sandwicherie.model
 {
+    [DataContract]
     public class Panier
     {
-
+        [DataMember]
         public Dictionary<Sandwich, int> sandwichs = new Dictionary<Sandwich, int>();
         
 
@@ -27,7 +30,7 @@ namespace Sandwicherie.model
         }
              public void getSandwichs()
         {
-              Console.WriteLine("################################################################################################################");
+            Console.WriteLine("################################################################################################################");
             Console.WriteLine("#############################################Facture du menu##################################################");
             Console.WriteLine("################################################################################################################");
             int price = 0;
@@ -49,6 +52,8 @@ namespace Sandwicherie.model
             Console.WriteLine("");
             Console.WriteLine("################################################################################################################");
 
+            
+            
         }
 
     }

@@ -1,21 +1,23 @@
 ﻿using System;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Sandwicherie.model
 {
-	public class Sandwich
+    
+    public class Sandwich
 	{
-        public double Pain { get; private set; }
-        public double Oeuf { get; private set; }
-        public double Tomate { get; private set; }
-        public double TrancheDePoulet { get; private set; }
-        public double Mayonnaise { get; private set; }
-        public double Salade { get; private set; }
-        public double Beurre { get; private set; }
-        public double TrancheDeJambon { get; private set; }
-        public double Thon { get; private set; }
-        public string Nom { get; private set; }
-        public double Prix { get; private set; }
+        public double Pain { get;  set; }
+        public double Oeuf { get;  set; }
+        public double Tomate { get;  set; }
+        public double TrancheDePoulet { get;  set; }
+        public double Mayonnaise { get;  set; }
+        public double Salade { get;  set; }
+        public double Beurre { get;  set; }
+        public double TrancheDeJambon { get;  set; }
+        public double Thon { get;  set; }
+        public string Nom { get;  set; }
+        public double Prix { get;  set; }
 
         public Sandwich(double pain, double oeuf, double tomate, double trancheDePoulet, double mayonnaise, double salade, double beurre, double trancheDeJambon, double thon, string nom, double prix)
         {
@@ -32,6 +34,9 @@ namespace Sandwicherie.model
             Prix = prix;
         }
 
+        public Sandwich()
+        {
+        }
 
         public override string ToString()
         {
@@ -47,17 +52,6 @@ namespace Sandwicherie.model
         .AppendIf(Thon > 0, Thon.ToString() + " Thon \n")
         .ToString();
             return str;
-
-//.AppendIf(Pain > 0, "one")
-//.AppendLine(Oeuf.ToString() + " oeuf")
-//.AppendLine(Tomate.ToString() + " tomate")
-//.AppendLine(TrancheDePoulet.ToString() + " TrancheDePoulet")
-//.AppendLine(Mayonnaise.ToString() + " Mayonnaise")
-//.AppendLine(Salade.ToString() + " Salade")
-//.AppendLine(Beurre.ToString() + " Beurre")
-//.AppendLine(TrancheDeJambon.ToString() + " TrancheDeJambon")
-//.AppendLine(Thon.ToString() + " Thon")
-//.ToString();
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using Sandwicherie.model;
-
+using Sandwicherie.utils;
 
 Catalogue menu = new Catalogue();
 Panier panier = new Panier();
@@ -40,75 +40,12 @@ string continu = "y";
 string command = "";
 while ("n" != continu)
 {
-    //Console.WriteLine("Quels sandwich souhaitez vous ?");
-    //string commandActual = Console.ReadLine();
-    //string[] commandes = commandActual.Split(',');
-    //for (int i = 0; i < commandes.Length; i++)
-    //{
 
-    //    string quantity = commandes[i].Substring(0, 1);
-
-    //    string name = commandes[i].Substring(2);
-
-    //   Sandwich sandwich =  menu.GetSandwich(name);
-    //    Console.WriteLine(name);
-    //    if (sandwich!= null)
-    //    {
-    //        int quantityInt = int.Parse(quantity);
-    //        panier.addSandwich(quantityInt, sandwich);
-
-            
-
-    //    }
-       
-    // }
-    //panier.getSandwichs();
-    //panier = new Panier();
-
-
-
-
-     string[] ligne = System.IO.File.ReadAllLines(@"/Users/yacinezegrour/Documents/Ecole/C#/commande.txt");
-
-
-
-    for (int l = 0; l < ligne.Length; l++)
-    {
-       
-        string[] plat = ligne[l].Split(',');
-
-        int x = 0;
-
-        while (x < plat.Length)
-        {
-
-            string quantity = plat[x].Substring(0, 1);
-
-            string name = plat[x].Substring(2);
-
-            Sandwich sandwich = menu.GetSandwich(name);
-            if (sandwich != null)
-            {
-                int quantityInt = int.Parse(quantity);
-                panier.addSandwich(quantityInt, sandwich);
-
-
-
-            }
-
-            x++;
-
-
-        }
-        panier.getSandwichs();
-        panier = new Panier();
-       
-
-
-
-    }
-
+    menu.getMenu();
+    Affichage.getChoiceInput(menu ,panier);
     Console.ReadLine();
+
+    
 }
 
 

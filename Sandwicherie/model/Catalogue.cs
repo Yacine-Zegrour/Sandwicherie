@@ -4,6 +4,7 @@ namespace Sandwicherie.model
     public class Catalogue
     {
         public List<Sandwich> sandwichsMenu = new List<Sandwich>();
+
         public Catalogue()
         {
 
@@ -13,7 +14,7 @@ namespace Sandwicherie.model
             sandwichsMenu.Add(sandwich);
         }
 
-        public Sandwich? GetSandwich(String name)
+        public Sandwich? GetSandwichByName(String name)
         {
             return sandwichsMenu.FirstOrDefault(e => e.Nom==name);
         }

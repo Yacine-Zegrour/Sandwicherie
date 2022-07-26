@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "soxoG3tN2K7Qo8FtXfjcj/i0Z0STnBP1PwRa3se50mbS3vrEg/bKtpiz2LI605cbhJq7D1dOfs8/XsOHL/QWtw==",
+  "dgSpecHash": "0NXkRE8UAi3U/H1hcg1Zh7VYW8NIY+b/TcA0A371x6H5eUjY3X++nDbuPwBTuPwWs0xDfdSR5n3kCj6guXa1rA==",
   "success": true,
   "projectFilePath": "/Users/yacinezegrour/Documents/Ecole/C#/Sandwicherie/Sandwicherie/Sandwicherie.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/yacinezegrour/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
