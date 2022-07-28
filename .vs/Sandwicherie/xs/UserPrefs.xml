@@ -1,17 +1,22 @@
 ﻿<Properties StartupConfiguration="{F99133BB-214F-4CE2-A3B7-C0BD08957AE3}|Default">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Sandwicherie/Program.cs">
     <Files>
-      <File FileName="Sandwicherie/model/Sandwich.cs" Line="33" Column="10" />
-      <File FileName="Sandwicherie/model/Panier.cs" Line="26" Column="11" />
-      <File FileName="Sandwicherie/model/Catalogue.cs" Line="34" Column="14" />
+      <File FileName="Sandwicherie/model/Panier.cs" Line="55" Column="13" />
+      <File FileName="Sandwicherie/model/Catalogue.cs" Line="7" Column="1" />
       <File FileName="Sandwicherie/model/SandwichBuilder.cs" Line="22" Column="10" />
-      <File FileName="Sandwicherie/Program.cs" Line="75" Column="24" />
+      <File FileName="Sandwicherie/Program.cs" Line="45" Column="44" />
       <File FileName="Sandwicherie/model/StringBuilderExtensions.cs" Line="15" Column="5" />
+      <File FileName="Sandwicherie/model/Sandwich.cs" Line="8" Column="12" />
+      <File FileName="Sandwicherie/utils/SandwichDto.cs" Line="1" Column="1" />
+      <File FileName="Sandwicherie/utils/Affichage.cs" Line="25" Column="37" />
+      <File FileName="Sandwicherie/utils/Parser.cs" Line="145" Column="52" />
+      <File FileName="Sandwicherie/utils/CommandeDtoJSon.cs" Line="18" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,6 +24,8 @@
           <Node name="Sandwicherie" expanded="True">
             <Node name="Sandwicherie" expanded="True">
               <Node name="model" expanded="True" />
+              <Node name="service" expanded="True" />
+              <Node name="utils" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -29,5 +36,4 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Sandwicherie PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

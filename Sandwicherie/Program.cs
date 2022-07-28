@@ -1,4 +1,7 @@
-﻿using Sandwicherie.model;
+﻿using Sandwicherie.Input;
+using Sandwicherie.model;
+using Sandwicherie.Output;
+using Sandwicherie.service;
 using Sandwicherie.utils;
 
 Catalogue menu = new Catalogue();
@@ -35,14 +38,18 @@ menu.addSandwich(jambonbeurre);
 string continu = "y";
 
 
-//menu.getMenu();
+menu.getMenu();
 
 string command = "";
 while ("n" != continu)
 {
+    Console.Clear();
+    IParserInput parserStrategyInput = new InputStrategy().ChoseInputStrategy(menu);
+    List<Panier> paniers = parserStrategyInput.Input(menu);
 
-    menu.getMenu();
-    Affichage.getChoiceInput(menu ,panier);
+    IParserOutput parserStrategyOutput = new OutputStrategy().ChoseOutputStrategy(paniers);
+    parserStrategyOutput.Output(paniers);
+
     Console.ReadLine();
 
     

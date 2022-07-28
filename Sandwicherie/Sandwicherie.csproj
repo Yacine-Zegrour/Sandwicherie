@@ -13,12 +13,16 @@
     <None Remove="utils\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="dto\" />
+    <None Remove="utils\Input\" />
+    <None Remove="utils\Output\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="model\" />
     <Folder Include="service\" />
     <Folder Include="utils\" />
     <Folder Include="dto\" />
+    <Folder Include="utils\Input\" />
+    <Folder Include="utils\Output\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />

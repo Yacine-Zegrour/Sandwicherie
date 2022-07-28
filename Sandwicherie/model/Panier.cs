@@ -9,7 +9,10 @@ namespace Sandwicherie.model
     {
         [DataMember]
         public Dictionary<Sandwich, int> sandwichs = new Dictionary<Sandwich, int>();
-        
+
+
+
+
 
         public Panier()
         {

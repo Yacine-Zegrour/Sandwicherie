@@ -5,10 +5,20 @@ namespace Sandwicherie.model
     {
         public List<Sandwich> sandwichsMenu = new List<Sandwich>();
 
-        public Catalogue()
-        {
+       
 
+        private static Catalogue _instance;
+
+        
+        private static Catalogue GetInstance()
+        {
+            if (_instance == null)
+            {
+                _instance = new Catalogue();
+            }
+            return _instance;
         }
+
         public void addSandwich(Sandwich sandwich)
         {
             sandwichsMenu.Add(sandwich);
@@ -19,7 +29,7 @@ namespace Sandwicherie.model
             return sandwichsMenu.FirstOrDefault(e => e.Nom==name);
         }
 
-        public void getMenu()
+        public  void getMenu()
         {
             Console.WriteLine("################################################################################################################");
             Console.WriteLine("#############################################Affichage du menu##################################################");
